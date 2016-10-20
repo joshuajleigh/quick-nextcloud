@@ -15,7 +15,7 @@ For when you want a dockerized nextcloud instance... quickly!
 ##make nuke
 * kills running nextcloud instance
 * removes running nexcloud containers
-* offers to sterlize the db, apps, config, data directories
+* offers to sterilize the db, apps, config, data directories
 
 to use: `make nextcloud` and follow simple prompts
 
@@ -24,6 +24,6 @@ When you first connect to a nextcloud instance you'll need to
 * plug in values from docker-compose.yml
 * enjoy!
 
-Thanks to the creaters of the wonderful docker images:
+Thanks to the creators of the wonderful docker images:
 * nextcloud: https://github.com/greyltc/docker-nextcloud
 * MariaDB: https://hub.docker.com/_/mariadb/
