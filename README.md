@@ -18,3 +18,12 @@ For when you want a dockerized nextcloud instance... quickly!
 * offers to sterlize the db, apps, config, data directories
 
 to use: `make nextcloud` and follow simple prompts
+
+When you first connect to a nextcloud instance you'll need to
+* create an admin user (your choice)
+* plug in values from docker-compose.yml
+* enjoy!
+
+Thanks to the creaters of the wonderful docker images:
+* nextcloud: https://github.com/greyltc/docker-nextcloud
+* MariaDB: https://hub.docker.com/_/mariadb/
