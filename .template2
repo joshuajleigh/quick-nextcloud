@@ -1,0 +1,24 @@
+nextcloud:
+  image: wonderfall/nextcloud
+  links:
+    - nextcloud_db:nextcloud_db
+  environment:
+    - UID=1000
+    - GID=1000
+  volumes:
+    - ./data:/nextcloud/data
+    - ./config:/nextcloud/config
+    - ./apps:/nextcloud/apps
+  ports:
+    - "80:80"
+
+nextcloud_db:
+  image: mariadb:10
+  volumes:
+    - ./db:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=docker
+    - MYSQL_DATABASE=nextcloud_db
+    - MYSQL_USER=nextcloud
+    - MYSQL_PASSWORD=docker
+
